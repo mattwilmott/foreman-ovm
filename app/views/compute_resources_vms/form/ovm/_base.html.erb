@@ -1,0 +1,7 @@
+<%= select_f f, :size, compute_resource.flavors, :slug, :slug, {}, {:label => _('Flavor')}  %>
+<div id='image_selection'>
+  <%= select_image(f, compute_resource) %>
+</div>
+<div id='region_selection'>
+  <%= select_region(f, compute_resource) %>
+</div>
