@@ -18,7 +18,7 @@ module ForemanOvm
       Foreman::Plugin.register :foreman_ovm do
         requires_foreman '>= 1.13'
         compute_resource ForemanOvm::Ovm
-        parameter_filter ComputeResource, :username, :password, :uri
+        parameter_filter ComputeResource, :username, :password, :url
       end
     end
 
@@ -27,21 +27,21 @@ module ForemanOvm
     end
 
     config.to_prepare do
-      require 'xlab-si/fog-oracle'
+      require 'fog/oracle'
       #require 'fog/digitalocean/compute_v2'
       #require 'fog/digitalocean/models/compute_v2/image'
       #require 'fog/digitalocean/models/compute_v2/server'
       require File.expand_path(
-        '../../../app/models/concerns/fog_extensions/ovm/server',
+        '../../../app/models/concerns/fog_extensions/oracle/server',
         __FILE__)
       require File.expand_path(
-        '../../../app/models/concerns/fog_extensions/ovm/image',
+        '../../../app/models/concerns/fog_extensions/oracle/image',
         __FILE__)
 
-      Fog::Compute::Ovm::Image.send :include,
-        FogExtensions::Ovm::Image
-      Fog::Compute::Ovm::Server.send :include,
-        FogExtensions::Ovm::Server
+      #Fog::Compute::Oracle::Image.send :include,
+      #  FogExtensions::Oracle::Image
+      Fog::Compute::Oracle.send :include,
+        FogExtensions::Oracle
       ::Host::Managed.send :include,
         ForemanOvm::Concerns::HostManagedExtensions
     end
