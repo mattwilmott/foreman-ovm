@@ -15,6 +15,11 @@
     * [foreman-users](https://groups.google.com/forum/?fromgroups#!forum/foreman-users)
     * [foreman-dev](https://groups.google.com/forum/?fromgroups#!forum/foreman-dev)
 
+
+## WARNING
+
+This gem is likely broken until version 0.1.x. It is currently undergoing heavy development
+
 ## Installation
 
 Please see the Foreman manual for appropriate instructions:
@@ -50,7 +55,7 @@ To verify that the installation was successful, go to Foreman, top bar **Adminis
 
 | Foreman Version | Plugin Version |
 | --------------- | --------------:|
-| >= 1.13.0       | ~> 0.1.x       |
+| >= 1.13.0       | ~> 0.0.2       |
 
 ## Configuration
 
