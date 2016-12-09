@@ -1,8 +1,8 @@
 # Foreman Oracle VM Plugin
 
-[![Code Climate](https://codeclimate.com/github/theforeman/foreman-digitalocean/badges/gpa.svg)](https://codeclimate.com/github/theforeman/foreman-digitalocean)
-[![Gem Version](https://badge.fury.io/rb/foreman_digitalocean.svg)](http://badge.fury.io/rb/foreman_digitalocean)
-[![Dependency Status](https://gemnasium.com/theforeman/foreman-digitalocean.svg)](https://gemnasium.com/theforeman/foreman-digitalocean)
+[![Code Climate](https://codeclimate.com/github/mattwilmott/foreman-ovm/badges/gpa.svg)](https://codeclimate.com/github/mattwilmott/foreman-ovm)
+[![Gem Version](https://badge.fury.io/rb/foreman_ovm.svg)](https://badge.fury.io/rb/foreman_ovm)
+[![Dependency Status](https://gemnasium.com/badges/github.com/mattwilmott/foreman-ovm.svg)](https://gemnasium.com/github.com/mattwilmott/foreman-ovm)
 
 ```foreman-ovm``` enables provisioning and managing of [Oracle VM](https://www.oracle.com/virtualization/vm-server-for-x86/index.html) instances in [Foreman](http://github.com/theforeman/foreman), all of that under the GPL v3+ license.
 
