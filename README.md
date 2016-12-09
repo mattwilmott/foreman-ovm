@@ -67,7 +67,7 @@ That's it. You're now ready to create and manage droplets in your new OVM comput
 
 You should see something like this in the Compute Resource page:
 
-![](http://i.imgur.com/cyFYOWg.png)
+![](http://imgur.com/a6yrxh4)
 ![](http://i.imgur.com/CTedBU1.png)
 
 ## How to contribute?
